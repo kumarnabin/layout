@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Admin Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-left">
+        <div class="brand">Your Brand</div>
+        <div class="menu-toggle">
+            <button type="button" id="toggleSidebar" title="Menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+      </div>
+      <div class="navbar-right">
+        <div class="user-profile">Admin 
+          <a title="logout" href="#" id="logout">
+            <i class="fas fa-sign-out"></i>
+          </a>
+        </div>
+    </div>
+    
+    </nav>
+    <div class="sidebar">
+      <div class="menu-item">
+        <a href="#"
+          ><i class="fas fa-home"></i
+          ><span class="menu-text">Dashboard</span></a
+        >
+      </div>
+      <div class="menu-item">
+        <a href="#">
+          <i class="fas fa-user"></i><span class="menu-text">Profile</span></a
+        >
+      </div>
+      <div class="menu-item">
+        <a href="#"
+          ><i class="fas fa-cog"></i><span class="menu-text">Settings</span></a
+        >
+      </div>
+
+
+    </div>
+
+    <div class="main-content">
+      <h1>main content</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde in totam
+        facere assumenda qui nihil, laborum omnis, praesentium tenetur cumque
+        nesciunt, atque ad autem asperiores provident eius suscipit nostrum
+        error.
+      </p>
+      <h1>main content</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde in totam
+        facere assumenda qui nihil, laborum omnis, praesentium tenetur cumque
+        nesciunt, atque ad autem asperiores provident eius suscipit nostrum
+        error.
+      </p>
+      <h1>main content</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde in totam
+        facere assumenda qui nihil, laborum omnis, praesentium tenetur cumque
+        nesciunt, atque ad autem asperiores provident eius suscipit nostrum
+        error.
+      </p>
+      <h1>main content</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde in totam
+        facere assumenda qui nihil, laborum omnis, praesentium tenetur cumque
+        nesciunt, atque ad autem asperiores provident eius suscipit nostrum
+        error.
+      </p>
+      <h1>main content</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde in totam
+        facere assumenda qui nihil, laborum omnis, praesentium tenetur cumque
+        nesciunt, atque ad autem asperiores provident eius suscipit nostrum
+        error.
+      </p>
+      <h1>main content</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde in totam
+        facere assumenda qui nihil, laborum omnis, praesentium tenetur cumque
+        nesciunt, atque ad autem asperiores provident eius suscipit nostrum
+        error.
+      </p>
+      <h1>main content</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde in totam
+        facere assumenda qui nihil, laborum omnis, praesentium tenetur cumque
+        nesciunt, atque ad autem asperiores provident eius suscipit nostrum
+        error.
+      </p>
+      <h1>main content</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde in totam
+        facere assumenda qui nihil, laborum omnis, praesentium tenetur cumque
+        nesciunt, atque ad autem asperiores provident eius suscipit nostrum
+        error.
+      </p>
+      <h1>main content</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde in totam
+        facere assumenda qui nihil, laborum omnis, praesentium tenetur cumque
+        nesciunt, atque ad autem asperiores provident eius suscipit nostrum
+        error.
+      </p>
+      <h1>main content</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde in totam
+        facere assumenda qui nihil, laborum omnis, praesentium tenetur cumque
+        nesciunt, atque ad autem asperiores provident eius suscipit nostrum
+        error.
+      </p>
+    </div>
+
+    <div class="footer">copyright</div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const sidebar = document.querySelector("body");
+        const toggleButton = document.getElementById("toggleSidebar");
+
+        toggleButton.addEventListener("click", function () {
+          sidebar.classList.toggle("sidebar-close");
+        });
+
+        function handleResize() {
+          const screenWidth = window.innerWidth;
+          if (screenWidth < 768) {
+            sidebar.classList.add("sidebar-close");
+          } else {
+            sidebar.classList.remove("sidebar-close");
+          }
+        }
+
+        // Add an event listener for window resize
+        window.addEventListener("resize", handleResize);
+
+        // Call the function on page load
+        handleResize();
+      });
+    </script>
+  </body>
+</html>
